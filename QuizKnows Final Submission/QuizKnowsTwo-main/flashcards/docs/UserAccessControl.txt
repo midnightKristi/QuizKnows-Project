@@ -1,0 +1,16 @@
+
+GRANT USAGE ON *.* TO `admin`@`localhost` IDENTIFIED BY PASSWORD '*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9';
+
+GRANT SELECT, DELETE, REFERENCES, CREATE VIEW ON `flashcards`.`users` TO `admin`@`localhost`;
+
+GRANT SELECT, DELETE, REFERENCES, CREATE VIEW ON `flashcards`.`card` TO `admin`@`localhost`;
+
+GRANT SELECT, INSERT, DELETE, REFERENCES, CREATE VIEW ON `flashcards`.`deletedsets` TO `admin`@`localhost`;
+
+GRANT SELECT, DELETE, REFERENCES, CREATE VIEW ON `flashcards`.`subject` TO `admin`@`localhost`;
+
+GRANT USAGE ON *.* TO `user`@`localhost` IDENTIFIED BY PASSWORD '*3D78252B4B8DF52A04A0BD81424E48C1C9E84CC1';
+
+GRANT SELECT (answer, id, subject_id, question), INSERT (answer, question), UPDATE (answer, question), DELETE ON `flashcards`.`card` TO `user`@`localhost`;
+
+GRANT SELECT (subject_name, id), INSERT (subject_name), UPDATE (subject_name), DELETE ON `flashcards`.`subject` TO `user`@`localhost`;

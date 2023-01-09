@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+.navbar {
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+.navbar ul li{
+    padding: 5px;
+    display: inline;
+}
+
+footer {
+    margin-top: 10px;
+    border-top: 1px solid black;
+}

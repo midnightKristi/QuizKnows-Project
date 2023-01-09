@@ -1,0 +1,141 @@
+<?php
+/******************************************************
+ * Flashcard script
+ * Version : 1.0.3
+ * Copyright© 2016 Avrasys Ltd. All Rights Reversed.
+ * This file may not be redistributed.
+ * Author URL:https://flashcardscript.com
+ ******************************************************/
+?>
+
+<?php
+
+return [
+    /* front */
+	'home' => 'HOME',
+	'vocabulary' => 'VOCABULARY',
+	'blog' => 'BLOG',
+	'contact' => 'CONTACT',
+	'prev' => 'Előző',
+    'restart' => 'Újraindít',
+	'next' => 'Következő',
+	'clickFlashCard' => 'Válassz egy kategóriát és kattints a kártyára!',
+	'selectCategory' => 'Kategória',
+	'audioNotSupported' => 'Nem támogatott audio formátum',
+
+	/* back */
+	'vocabularyBuilderAdministrator' => 'Flashcard Builder Adminisztráció',
+	'signIn' => 'Belépés',
+	'rememberMe' => 'Emlékezz rám',
+	'forgotYourPassword' => 'Elfelejtetted a jelszavad?',
+	'forgotPassword' => 'Elfelejtett jelszó',
+	'email' => 'Email',
+	'sendPassword' => 'Jelszó küldése',
+	'addWords' => 'Szavak',
+	'addCategories' => 'Kategóriák',
+	'addExercises' => 'Feladatok',
+	'settings' => 'Beállítások',
+	'profile' => 'Profil',
+	'addNewWords' => 'új szó hozzáadása',
+	'word' => 'Szó',
+	'audio' => 'Audio',
+	'exampleSentence' => 'Példamondat',
+	'availableWords' => 'Elérhető szavak',
+	'nameOfTheWord' => 'Szó',
+	'category' => 'Kategória',
+	'actions' => 'Műveletek',
+	'uploadAudio' => 'Audio feltöltése',	
+	'logout' => 'KIJELENTKEZÉS',
+	
+	'createNewCategory' => 'Új kategória létrehozása',
+	'enterCategory' => 'Kategória neve',
+	'enterTitle' => 'Cím megadása',
+	'add' => 'Hozzáadás',
+	'availableCategories' => 'Elérhető kategóriák',
+	'categoryName' => 'Kategória neve',
+	'edit' => 'Szerkeszt',
+	'delete' => 'Töröl',
+	'editCategory' => 'Kategória szerkesztése',
+	'back' => 'Vissza',
+	'editExercise' => 'Feladat szerkesztése',
+	'title' => 'Cím',
+	'search' => 'Keresés',
+	'randomizeWords' => 'Kártyák véletlenszerű megjelenítése',
+	'yes' => 'Igen',
+	'no' => 'Nem',
+	'save' => 'Mentés',
+	'pleaseSelectCategory' => 'Válassz kategóriát',
+	'createNewExercise' => 'Új feladat létrehozása',
+	'availableExercises' => 'Elérhető feladatok',
+	'exerciseTitle' => 'Feladat címe',
+	'embedCode' => 'Beágyazó kód',
+	'actions' => 'Műveletek',
+	'addNewWords' => 'Add New Words',
+	'exampleSentence' => 'Példamondat',
+	'availableWords' => 'Elérhető szavak',
+	'logIn' => 'Bejelentkezés',
+	'profileSettings' => 'Profil Beállítás',
+	'changeUsername' => 'Felhasználónév módosítása',
+	'changeEmailAddress' => 'Email cím módosítása',
+	'currentEmail' => 'Jelenlegi email cím',
+	'newEmailAddress' => 'Új email cím',
+	'confirmNewEmailAddress' => 'Új email cím megerősítése',
+	'changeAdminPassword' => 'Admin jelszó módosítása',
+	'currentPassword' => 'Jelenlegi jelszó',
+	'newPassword' => 'Új jelszó',
+	'confirmNewPassword' => 'Új jelszó megerősítése',
+	'chnageAvatar' => 'Avatar módosítása',
+	'upload' => 'Feltölt',
+	'generalSettings' => 'Általános Beállítások',
+	'siteTitle' => 'Oldal neve',
+	'changeLanguage' => 'Nyelv módosítása',
+	'editWord' => 'Szó szerkesztése',
+	'username'=>'Felhasználónév',
+	'password'=>'Jelszó',
+	'changeAvatar'=>'Avatar módosítása',
+
+	'adSettings'=>'Hirdetési beállítások',
+	'enableInlineAd'=>'Feladat hirdetés engedélyezése',
+	'showInlineAd'=>'Hirdetés megjelenítése feladatban',
+	'enableBelowExerciseAd'=>'Feladat alatti hirdetés engedélyezése',
+	'timesInThisExercise'=>'alkalommal ebben a feladatban',
+
+	'emailMarketingSetting'=>'Email marketing beállítások',
+	'enableEmailMarketing'=>'Email marketing engedélyezése',
+	'showSubscriptionForm'=>'Feliratkozó űrlap megjelenítése',
+	'inlineAdSpot'=>'Inline ad spot',
+	'adSpotBelowExercise'=>'Ad spot below exercise',
+	'selectMailingService'=>'Válassz email szolgáltatót',
+	'accountName'=>'Fiók neve',
+	'apiKey'=>'API kulcs',
+	'optInList'=>'Email lista',
+
+	/* long message */
+	'msg1' => 'Audio fájl feltöltése (opcionális)',
+	'msg2' => 'Írj egy példamondatot az itt használt szóval. A mondat meg fog jelenni a szókártya hátoldalán.',
+	'msg3' => 'Fájl feltöltése sajátgépről',
+	'msg4' => 'Email cím nem egyezik.',
+	'msg5' => 'Jelszó nem egyezik.',
+	'msg6' => 'Írd ide a szót és annak jelentését. A szavakat "|" jellel válasud el.',		
+	'msg7' => 'Kérlek add meg a jelenlegi jelszavadat a módosítások mentéséhez!',
+
+	'msg8'=>'Ez a hirdetés egy feladaton belül jelenik meg, két szókártya között.',
+	'msg9'=>'Ez a hirdetés a feladat alatt jelenik meg.',
+	'msg10'=>'Válaszd ki a listából az email marketing szolgáltatódat.',
+	'msg11'=>'Felhasználói fiók neve.',
+	'msg12'=>'Itt add meg a szólgáltatótól kapott API kulcsot.',
+		'msg13'=>'Válaszd ki a fiókodhoz tartozó email listát.',
+		'msg14'=>'Illesz be ide HTML vagy Google adsense kódot. Ajánlott méret 336 X 280 pixel ....',
+		'msg15'=>'Illesz be ide HTML vagy Google adsense kódot. Ajánlott méret 728 X 90 pixel ....',
+
+
+	/* Strings added in 1.0.3 */
+
+	'siteTitleDesc' => 'Ez a cím fog megjelenni a böngésző fülében.',
+	'changeLanguageDesc' => 'A felhasználói felület nyelvének módosítása.',
+	'selectMailingServiceDrop' => 'Email szolgáltató választása',
+	'subscribeToNewsl' => 'Íratkozz fel hírlevelünkre!',
+	'subscribeToNewslDesc' => 'Join 20,000 subscribers and receive monthly freebies and special offers and access to exclusive members-only content.',
+	'subscribeBtn' => 'FELIRATKOZOM',
+	'subscribeThanks' => 'köszönjük a feliratkozást.',
+];

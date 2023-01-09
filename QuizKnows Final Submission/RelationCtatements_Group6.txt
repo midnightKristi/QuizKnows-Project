@@ -1,0 +1,53 @@
+CREATE TABLE  User 
+(
+	userID int(10) PRIMARY KEY,
+	username varchar(20),
+	password varchar(20),
+	lastLogin timestamp,
+	lastLogout timestamp,
+	settings boolean
+);
+CREATE TABLE Flashcard
+(
+	cardID int(10) PRIMARY KEY,
+	question varchar(50),
+	answer varchar(50),
+	dateCreated timestamp,
+	lastEdited timestamp,
+	setID int(10) FOREIGN KEY REFERENCES Sets(setID)
+);
+CREATE TABLE Sets
+(
+	setID int(10) PRIMARY KEY,
+	setName varchar(20),
+	dateCreated timestamp,
+	lastUpdate timestamp,
+	userID int(10) FOREIGN KEY REFERENCES User(userID)
+);
+CREATE TABLE deletedSets
+(
+	delSetID int(10) PRIMARY KEY,
+	dateCreated timestamp,
+	dateDeleted timestamp,
+	userID int(10) FOREIGN KEY REFERENCES Userr(userID)
+);	
+
+CREATE OR REPLACE TRIGGER delSetsTrig
+(
+    AFTER DELETE ON Sets
+    FOR EACH ROW
+    BEGIN
+        INSERT INTO deletedSets(delSetID, dateCreated, userID) VALUES(:old.setID, :old.dateCreated, :old.userID);
+    END;
+)
+
+CREATE or REPLACE FUNCTION nsection
+(
+	(s IN registered.userID%TYPE)
+	RETURN INTEGER
+	AS n INTEGER;
+	BEGIN
+	SELECT count(*) INTO n FROM Sets where userID=s;
+	RETURN n;
+	END;
+)
